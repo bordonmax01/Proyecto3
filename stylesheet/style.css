@@ -30,6 +30,30 @@ article h3.titulo {
 	   color:blue;
 }
 
+.facebook {
+
+	   font-size: 200px;
+	   color: #3b5998;
+}
+
+.linkedin {
+         font-size: 200px;
+         color:#007bb5;
+
+}
+.instagram {
+
+         font-size: 200px;
+         color:#125688;
+
+}
+
+.twitter {
+     font-size: 200px;
+	color:#55acee;
+}
+
+
 .parrafo {
 
 
