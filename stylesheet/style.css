@@ -1,0 +1,175 @@
+/*Importancia el !important  gana siempre*/
+/*Especifidad  Cuanto mas especifico en nombrar el elemento gano */
+/*orden Lo que esta abajo pisa lo que esta arriba*/ 
+
+
+
+body
+{
+	
+	font-size:10px;
+	
+}
+
+
+
+.color-rosa { color:pink; }
+
+h3,p { font-family:'Lora', sans-serif;} /* La coma funciona como una Y el h3 y el p */
+
+
+/* Todo lo que este dentro de un article que sea un h3 y que tenga titulo*/
+article h3.titulo {
+                    color: green;
+
+}
+
+.icono {
+
+	   font-size: 200px;
+	   color:blue;
+}
+
+.parrafo {
+
+
+	line-height: normal; /*Interlineado*/
+	 letter-spacing:2px; /*Interletrado*/
+}
+
+.titulo {
+
+     font-size:80px;             /*Se cierra */
+     font-style: italic;
+     font-weight: bold;
+     color: blue; /*!important -El important le gana a todos*/
+     text-decoration: underline;
+     text-transform: uppercase;
+     /*font-family:"Times New Roman",Times,serif;*/   /*Times new Roman windows, Times en Mac y serif en otros sistemas  otra configuracion puede ser  Arial, Helvetica, sans-serif*/
+     font-family: 'Lora', serif;
+     font-weight:900;
+     color:red;
+
+}
+.cuadrado {
+
+             height:200px;
+             width: 200px;
+             background: blue;
+             border: 4px solid red;
+             border-left: 10 px dotted yellow;
+             border-bottom: 3px double pink;
+             border-right: 5px dashed orange;
+
+}
+
+.circuloazul {
+
+
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	background: blue;
+	/* width and height can be anything, as long as they're equal */
+
+}
+
+.circulo {
+
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	box-shadow: 10px 10px 5px rgba(0,0,0,0.5); /* corrido 10px eje x corrido 10px eje yNegro con transparencia de 0.5*/
+}
+
+.rojo {
+              background:red;
+
+}
+
+.verde {
+
+	  background: green;
+}
+
+.azul {
+
+	   background: blue;
+}
+
+.circulorojo {
+
+
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	background: red;
+	/* width and height can be anything, as long as they're equal */
+
+}
+
+.circuloverde {
+
+
+	border-radius: 50%;
+	width: 200px;
+	height: 200px; 
+	background: green;
+	/* width and height can be anything, as long as they're equal */
+
+}
+
+
+.boton {
+
+	  background: red;
+	  color:white;
+	  text-decoration: none; /*Anula el subrayado del link*/
+	  font-size: 50px;
+
+}
+
+
+
+.boton:hover{ /*Cuando pasas por arriba del boton cambiar el comportamiento*/
+
+	    background: blue;
+	    color: yellow;
+}
+
+.elementos li {
+
+	  color:red;
+}
+
+
+/*Pseudo selector lo que esta despues de los puntos*/
+.elementos li:first-child{ /*El primer elemento de la lista ponerlos en azul*/
+
+	 color:blue;
+}
+.elementos li:last-child { /*De la lista recuperar el ultimo*/
+
+	color: green;
+}
+
+.elementos li:nth-child(2){ /* Modifico un elemento en particular en este caso el elemento numero 2*/
+
+
+	color:pink;
+}
+.elementos li:nth-child(odd){ /*Todos los elementos impares*/
+
+	  background: grey;
+}
+.elementos li:nth-child(even){ /*Todos los elementos pares*/
+
+	  background: blue;
+}
+
+ul {
+
+	 list-style: none;
+}
+
+
